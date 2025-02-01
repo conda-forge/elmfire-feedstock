@@ -1,5 +1,5 @@
 {% set name = "elmfire" %}
-{% set version = "2024.0831" %}
+{% set version = "2025.0131" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/lautenberger/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: cb8dbe362449353acfe37afd8c79c7342849f3da82eaba67fa4fd5dc041a7de5
+  sha256: da4de3082591dd36bd9d0c7c80388307366447454b7546acbdc8932d5ae29f6a
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script_env:
     - ELMFIRE_VERSION={{ version }}
