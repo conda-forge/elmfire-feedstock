@@ -10,7 +10,7 @@ source:
   sha256: 90617ba3fc1193887674a8cb190d638ec7338954f8154b73335e78ca1b016498
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   script_env:
     - ELMFIRE_VERSION={{ version }}
