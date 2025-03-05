@@ -31,6 +31,9 @@ requirements:
 test:
   commands:
     - test -f $PREFIX/bin/elmfire
+    - test -f $PREFIX/bin/elmfire_debug
+    - test -f $PREFIX/bin/elmfire_post
+    - test -f $PREFIX/bin/elmfire_post_debug
 
 about:
   home: https://elmfire.io/
