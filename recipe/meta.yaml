@@ -10,7 +10,7 @@ source:
   sha256: 9b92cbea62f8d5a6b4e65fa0d9f6cdb4fbd8baf5a38d5e855d5bb0e663431217
 
 build:
-  number: 1
+  number: 2
   skip: true  # [not linux]
   script_env:
     - ELMFIRE_VERSION={{ version }}
