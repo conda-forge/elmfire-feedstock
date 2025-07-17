@@ -15,3 +15,10 @@ cp bin/elmfire_$ELMFIRE_VERSION $PREFIX/bin/elmfire
 cp bin/elmfire_debug_$ELMFIRE_VERSION $PREFIX/bin/elmfire_debug
 cp bin/elmfire_post_$ELMFIRE_VERSION $PREFIX/bin/elmfire_post
 cp bin/elmfire_post_debug_$ELMFIRE_VERSION $PREFIX/bin/elmfire_post_debug
+
+export ELMFIRE_LOWMEM=TRUE
+cd build/linux && ./make_gnu.sh
+cp bin/elmfire_$ELMFIRE_VERSION $PREFIX/bin/elmfire_lowmem
+cp bin/elmfire_debug_$ELMFIRE_VERSION $PREFIX/bin/elmfire_debug_lowmem
+cp bin/elmfire_post_$ELMFIRE_VERSION $PREFIX/bin/elmfire_post_lowmem
+cp bin/elmfire_post_debug_$ELMFIRE_VERSION $PREFIX/bin/elmfire_post_debug_lowmem
